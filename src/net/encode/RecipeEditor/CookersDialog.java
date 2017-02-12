@@ -42,7 +42,7 @@ public class CookersDialog extends JDialog {
 		addComponentListener(new ComponentAdapter() {
 			@Override
 			public void componentShown(ComponentEvent e) {
-				if(RecipeEditor.instance.recipe.getContainers() != null)
+				if(RecipeEditor.instance.recipe.getCookers() != null)
 				{
 					cookersListTemp = RecipeEditor.instance.recipe.getCookers();
 					
