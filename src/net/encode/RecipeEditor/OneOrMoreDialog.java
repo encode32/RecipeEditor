@@ -54,7 +54,7 @@ public class OneOrMoreDialog extends JDialog {
 		addComponentListener(new ComponentAdapter() {
 			@Override
 			public void componentShown(ComponentEvent e) {
-				if(RecipeEditor.instance.recipe.getIngredients() != null && RecipeEditor.instance.recipe.getIngredients().getOneof() != null)
+				if(RecipeEditor.instance.recipe.getIngredients() != null && RecipeEditor.instance.recipe.getIngredients().getOneormore() != null)
 				{
 					oneOrMoreListTemp = RecipeEditor.instance.recipe.getIngredients().getOneormore();
 					
