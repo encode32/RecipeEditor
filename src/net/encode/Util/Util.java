@@ -93,7 +93,7 @@ public class Util {
 				String path = folder.getPath();
 				String decodedPath = URLDecoder.decode(path, "UTF-8");
 				
-				file = new File(decodedPath+"/recipe"+recipe.getRecipeid().toString()+".json");
+				file = new File(decodedPath+"/recipe "+recipe.getRecipeid().toString()+".json");
 				fop = new FileOutputStream(file);
 				
 				if (!file.exists()) {
